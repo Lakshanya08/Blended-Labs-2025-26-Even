@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: LAKSHANYA.N
+* **Register Number**: 212224230136
+* **Date of Submission**: 13/02/2026
 
 ---
 
@@ -84,34 +84,33 @@ Install and start a web server (Apache HTTPD) on the EC2 instance using user dat
 Create a simple HTML page and verify that it can be accessed from a web browser using the public IP address of the instance.---
 
 ## Workflow (Student Explanation)
+1.I started the lab and logged into the Amazon Web Services Management Console in the N. Virginia (us-east-1) region.
 
-(Write the steps you followed in your own words)
+2.I created a custom VPC using Amazon VPC, configured public and private subnets, and enabled an Internet Gateway and NAT Gateway to manage internet connectivity.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+3.I added additional public and private subnets in a second Availability Zone and updated the route tables to ensure proper routing for both internet-facing and private traffic.
 
+4.I created a Security Group named Web Security Group and configured it to allow HTTP (port 80) access from anywhere to enable web traffic.
+
+5.I launched an EC2 instance using Amazon EC2 in the public subnet, enabled auto-assign public IP, attached the security group, and selected the required key pair.
+
+6.I configured a user data script to automatically install Apache and deploy a web application, then verified the web server by accessing the instance’s public DNS in a browser.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: VPC and Subnet Details
-
-(Insert Screenshot Here)
-
+<img width="1915" height="1035" alt="Screenshot 2026-02-13 222656" src="https://github.com/user-attachments/assets/b9a0f7d3-36d5-45b2-9ca2-e4561bd6402f" />
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1919" height="1025" alt="Screenshot 2026-02-13 225214" src="https://github.com/user-attachments/assets/29bc5c73-bd18-4e64-84f9-b9625eb13e0c" />
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
-
-(Insert Screenshot Here)
+<img width="1917" height="1079" alt="Screenshot 2026-02-13 225708" src="https://github.com/user-attachments/assets/590cabaa-780b-4212-bf41-74f1a7d57ed4" />
 
 ---
 
