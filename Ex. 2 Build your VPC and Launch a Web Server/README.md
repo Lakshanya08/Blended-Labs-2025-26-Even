@@ -95,6 +95,7 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 5.I launched an EC2 instance using Amazon EC2 in the public subnet, enabled auto-assign public IP, attached the security group, and selected the required key pair.
 
 6.I configured a user data script to automatically install Apache and deploy a web application, then verified the web server by accessing the instance’s public DNS in a browser.
+
 ---
 
 ## Output Screenshots (Attach 3)
