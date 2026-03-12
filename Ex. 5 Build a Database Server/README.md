@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: LAKSHANYA N
+* **Register Number**: 212224230136
+* **Date of Submission**: 12-03-2026
 
 ---
 
@@ -82,13 +82,12 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+2. A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+3. A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+4. The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+5. The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
 ---
 
@@ -96,22 +95,22 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1919" height="964" alt="Screenshot 2026-03-11 224018" src="https://github.com/user-attachments/assets/959c5656-e4c2-4acb-bf6d-a3d2041a5031" />
 
 ---
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1913" height="965" alt="Screenshot 2026-03-11 225338" src="https://github.com/user-attachments/assets/ee7206d1-89df-49d5-814f-feab3578ec37" />
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1919" height="955" alt="Screenshot 2026-03-11 231013" src="https://github.com/user-attachments/assets/76213013-8873-478a-8302-16ebdbcf88fd" />
 
 ---
 
 ## Result
 
-This experiment demonstrated how to build a database server in AWS using an EC2 instance. By installing and configuring a DBMS, creating a sample database, and testing connectivity, the fundamentals of hosting and managing a cloud-based database server were underst
+This experiment demonstrated how to build a database server in AWS using an EC2 instance. By installing and configuring a DBMS, creating a sample database, and testing connectivity, the fundamentals of hosting and managing a cloud-based database server were understood.
